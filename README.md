@@ -1,6 +1,8 @@
 # Sort
 Library of sorting variations
 
-Usage example:
+Usage examples:
 
 `⍋Sort.German text`
+
+`⍒Sort.Natural text`
