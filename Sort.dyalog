@@ -6,6 +6,7 @@
       }
 
       Natural←{
+          ABC←abc←⊢
           Digits←∊∘⎕D
           CutOffs←1,2≠/Digits
           Parts←CutOffs⊂⊢
@@ -13,25 +14,25 @@
               ⊃⊃⎕VFI ⍵:⍎⍵
               ⍵
           }
-          Norm←ExecNums¨∘Parts¨
-          ⍺⍺ Sort Norm ⍵
+          NORM←Norm←ExecNums¨∘Parts¨
+          abc ⍺⍺ Sort Norm ⍵
       }
 
-      Danish←{
-          abc←'ÁÉÍÓÚÝǼǾ○'VariantsOf'AEIOUYÆØÅ'⊢' ',⎕A,'ÆØÅ'
-          Norm←'aa' 'Aa' 'AA'⎕R(,¨'ӑӐӐ')
+      Danish←{ ⍝ http://sproget.dk/raad-og-regler/Retskrivningsregler/retskrivningsregler/a7-1-6/a7-4-alfabetisk-rekkefolge
+          ABC←abc←⊖'ÁÀ' 'Ç' 'Ð' 'ÉÈË' 'Þ' 'ÍÌÏ' 'ÓÒ' 'Ú' 'ÝÜ' 'ÄǼ' 'ÖǾ' 'Ᾰ'VariantsOf'ACDEHIOUYÆØÅ'⊢' ',⎕A,'ÆØÅ'
+          NORM←Norm←'aa' 'Aa' 'AA' 'þ' 'Þ'⎕R'ӑ' 'Ӑ' 'Ӑ' 'tþ' 'TÞ' ⍝ n.b. not ligatures
           abc ⍺⍺ Sort Norm ⍵
       }
 
       Finnish←{ ⍝ https://en.wikipedia.org/wiki/Finnish_orthography#Collation_order
-          abc←'DĐÐ' 'EÉÆŒ' 'LŁ' 'NŊ' 'OŒ' 'VW' 'SŠẞ' 'YÜŰ' 'ZŽ' 'ÖØÕŐ'VariantsOf'DELNOVSYZÖ'⊢' ',⎕A,'ÅÄÖ'~'W'
-          Norm←'AOS'ExpLigs'ÆŒẞ'
+          ABC←abc←'DĐÐ' 'EÉÆŒ' 'LŁ' 'NŊ' 'OŒ' 'VW' 'SŠẞ' 'YÜŰ' 'ZŽ' 'ÖØÕŐ'VariantsOf'DELNOVSYZÖ'⊢' ',⎕A,'ÅÄÖ'~'W'
+          NORM←Norm←'AOS'ExpLigs'ÆŒẞ'
           abc ⍺⍺ Sort Norm ⍵
       }
 
       German←{ ⍝ https://en.wikipedia.org/wiki/German_orthography#Sorting
-          abc←'aAäÄ' 'oOöÖ' 'ßẞsS' 'uUüÜ'VariantsOf'AOSU'⊢' ',⎕A
-          Norm←'sS'ExpLigs'ßẞ'
+          ABC←abc←'aAäÄ' 'oOöÖ' 'ßẞsS' 'uUüÜ'VariantsOf'AOSU'⊢' ',⎕A
+          NORM←Norm←'sS'ExpLigs'ßẞ'
           abc ⍺⍺ Sort Norm ⍵
       }
 
@@ -69,7 +70,7 @@
       }
 
       Mix←{ ⍝ ↑⍣≡ padding with ⎕UCS 0
-          ' 'AtUE(=∘last)zero AtUE IsSp Mix last AtUE IsSp ⍵
+          ' 'AtUE(=∘last)zero AtUE IsSp↑⍣≡last AtUE IsSp ⍵
       }
 
     (zero last)←⎕UCS 0 1114111 ⍝ first and last Uniocde code points
