@@ -42,7 +42,7 @@
           ⍺←⊢
           11::A⊣(∊A)←⍺ ⍺⍺∊A←⍵ ⍝ if function cannot be inverted, try acting on shape rather than data
           2=⎕NC'⍺':⍵⍵⍣¯1⊢(⍵⍵ ⍺)⍺⍺(⍵⍵ ⍵)
-          ⍵⍵⍣¯1 ⍺⍺ ⍵⍵ ⍵
+          ⍺ ⍵⍵⍣¯1 ⍺⍺ ⍵⍵ ⍵
       }
 
       AtUE←{ ⍝ @ Under ∊
