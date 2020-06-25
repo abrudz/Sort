@@ -78,8 +78,14 @@
     spaces←⊂'.''-/'
 
     IsSp←' '=⊢
-
-    LoUp←0 1∘.(,819⌶)⊢ ⍝ Fold to lower and upper
+    
+    ∇ f←LoUp ⍝ Map to lower and upper
+      :If 18≤⊃⊃1↓'.'⎕VFI⊃1↓# ⎕WG'APLVersion'
+          f←¯1 1∘.(,⎕C)⊢ 
+     :Else
+          f←0 1∘.(,819⌶)⊢
+      :EndIf
+    ∇
 
     Full←1 3 2⍉↑∘LoUp ⍝ Convert nested uppercase to full ⍋-style alphabet
 
