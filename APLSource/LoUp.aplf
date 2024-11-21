@@ -1,0 +1,6 @@
+ f←LoUp ⍝ Map to lower and upper
+ :If 18≤⊃⊃1↓'.'⎕VFI⊃1↓# ⎕WG'APLVersion'
+     f←¯1 1∘.(,⎕C)⊢
+ :Else
+     f←0 1∘.(,819⌶)⊢
+ :EndIf

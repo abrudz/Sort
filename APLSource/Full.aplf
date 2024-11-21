@@ -1,0 +1,3 @@
+ Full←{ ⍝ Convert nested uppercase to full ⍋-style alphabet
+     1 3 2⍉↑LoUp ⍵
+ }

@@ -1,0 +1,3 @@
+ Mix←{ ⍝ ↑⍣≡ padding with ⎕UCS 0
+     ' 'AtUE(=∘last)zero AtUE IsSp↑⍣≡last AtUE IsSp ⍵
+ }

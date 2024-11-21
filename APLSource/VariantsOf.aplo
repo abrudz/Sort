@@ -1,0 +1,7 @@
+ VariantsOf←{
+     base←' ',⍵⍵
+     add←spaces,⍺⍺
+     from←,¨base,'.'
+     to←'&',⍨base,¨add
+     Full from ⎕S to⊢' ',⍵
+ }

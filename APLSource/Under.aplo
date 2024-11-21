@@ -1,0 +1,6 @@
+ Under←{ ⍝ a.k.a. Dual
+     ⍺←⊢
+     11::A⊣(∊A)←⍺ ⍺⍺∊A←⍵ ⍝ if function cannot be inverted, try acting on shape rather than data
+     2=⎕NC'⍺':⍵⍵⍣¯1⊢(⍵⍵ ⍺)⍺⍺(⍵⍵ ⍵)
+     ⍵⍵⍣¯1 ⍺⍺ ⍵⍵ ⍵
+ }

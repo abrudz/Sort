@@ -1,0 +1,12 @@
+ Natural←{
+     ABC←abc←⊢
+     Digits←∊∘⎕D
+     CutOffs←1,2≠/Digits
+     Parts←CutOffs⊂⊢
+     ExecNums←{
+         ⊃⊃⎕VFI ⍵:⍎⍵
+         ⍵
+     }
+     NORM←Norm←ExecNums¨∘Parts¨
+     abc ⍺⍺ Sort Norm ⍵
+ }

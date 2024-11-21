@@ -1,0 +1,5 @@
+ Danish←{ ⍝ http://sproget.dk/raad-og-regler/Retskrivningsregler/retskrivningsregler/a7-1-6/a7-4-alfabetisk-rekkefolge
+     ABC←abc←⊖'ÁÀ' 'Ç' 'Ð' 'ÉÈË' 'Þ' 'ÍÌÏ' 'ÓÒ' 'Ú' 'ÝÜ' 'ÄǼ' 'ÖǾ' 'Ᾰ'VariantsOf'ACDEHIOUYÆØÅ'⊢' ',⎕A,'ÆØÅ'
+     NORM←Norm←'aa' 'Aa' 'AA' 'þ' 'Þ'⎕R'ӑ' 'Ӑ' 'Ӑ' 'tþ' 'TÞ' ⍝ n.b. not ligatures
+     abc ⍺⍺ Sort Norm ⍵
+ }

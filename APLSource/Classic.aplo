@@ -1,0 +1,3 @@
+ Classic←{
+     ⎕AV ⍺⍺ Sort Mix ⍵
+ }

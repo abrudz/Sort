@@ -1,0 +1,5 @@
+ German←{ ⍝ https://en.wikipedia.org/wiki/German_orthography#Sorting
+     ABC←abc←'aAäÄ' 'oOöÖ' 'ßẞsS' 'uUüÜ'VariantsOf'AOSU'⊢' ',⎕A
+     NORM←Norm←'sS'ExpLigs'ßẞ'
+     abc ⍺⍺ Sort Norm ⍵
+ }

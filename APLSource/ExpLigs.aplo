@@ -1,0 +1,5 @@
+ ExpLigs←{ ⍝ Expand Ligatures
+     from←,LoUp ⍵⍵
+     to←,LoUp ⍺⍺,¨⍵⍵
+     from ⎕R to⊢⍵
+ }

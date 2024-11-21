@@ -1,0 +1,5 @@
+ Finnish←{ ⍝ https://en.wikipedia.org/wiki/Finnish_orthography#Collation_order
+     ABC←abc←'DĐÐ' 'EÉÆŒ' 'LŁ' 'NŊ' 'OŒ' 'VW' 'SŠẞ' 'YÜŰ' 'ZŽ' 'ÖØÕŐ'VariantsOf'DELNOVSYZÖ'⊢' ',⎕A,'ÅÄÖ'~'W'
+     NORM←Norm←'AOS'ExpLigs'ÆŒẞ'
+     abc ⍺⍺ Sort Norm ⍵
+ }
