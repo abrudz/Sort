@@ -19,5 +19,5 @@
   source: "APLSource/Sort",
   tags: "sorting,natural-sort,language",
   userCommandScript: "",
-  version: "0.1.1+8",
+  version: "0.1.1+9",
 }
