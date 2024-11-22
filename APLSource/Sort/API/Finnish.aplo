@@ -1,0 +1,1 @@
+Finnish←{⍺←⊢ ⋄ 1:shy←⍺ (⍺⍺ ##.Finnish) ⍵}
