@@ -1,5 +1,5 @@
 {
-  api: "",
+  api: "API",
   assets: "",
   description: "Allow sorting according to various rules",
   documentation: "",
@@ -11,13 +11,13 @@
   maintainer: "a.brudz@gmail.com",
   minimumAplVersion: "18.0",
   ml: 1,
-  name: "sort",
+  name: "Sort",
   os_lin: 1,
   os_mac: 1,
   os_win: 1,
   project_url: "https://github.com/abrudz/sort",
-  source: "APLSource",
+  source: "APLSource/Sort",
   tags: "sorting,natural-sort,language",
   userCommandScript: "",
-  version: "0.1.0+3",
+  version: "0.1.1+8",
 }
